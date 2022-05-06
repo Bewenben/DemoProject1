@@ -1,0 +1,375 @@
+body {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  background-color: #424242;
+  font-family: 'Roboto', serif;
+  font-weight: 700;
+}
+
+/*------------------ Navigation Bar ------------------------------*/
+
+/* Header */
+
+.header {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 10px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  background-image: url(../img/logo-light.png);
+  background-size: 100px;
+  margin-left: 10px;
+  padding-right: 87px;
+  padding-top: 30px;
+  margin-top: 6px;
+}
+
+#navbar1 a.logo {
+  background-image: url(../img/logo-dark.png);
+  background-size: 100px;
+  margin-left: 10px;
+  padding-right: 85px;
+  padding-top: 30px;
+  margin-top: 6px;
+}
+
+#navbar1 {
+  background-color: #fff;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 0.3s;
+}
+
+#navbar1 a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar1 .sidebar .closebtn:hover {
+  background-color: transparent;
+  color: #818181;
+}
+
+#navbar1 a:hover {
+  color: #818181;
+}
+
+/* Sidebar */
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(29, 29, 29);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Navbar button */
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  border: none;
+  float: right;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+#grad1 .openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  float: right;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+#grad1 .openbtn:hover {
+  color: #000;
+  transition: 0.3s;
+}
+
+.openbtn:hover {
+  color: rgb(177, 177, 177);
+  transition: 0.3s;
+}
+
+#main {
+  transition: margin-right .5s;
+  padding: 10px 10px;
+}
+
+#mySidebar #columnbar {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+#columnbar button {
+  border-radius: 100px;
+  margin-top: 5px;
+  background-color: rgb(102, 202, 8);
+  color: white;
+  padding: 6px 24px 6px;
+  width: 60%;
+  display: block;
+  border: 2px solid transparent;
+  margin-left: 140px;
+  margin-bottom: 50px;
+}
+
+input {
+  border-radius: 100px;
+  margin-top: 15px;
+  padding: 6px 24px 6px;
+  width: 60%;
+  display: block;
+  border: 2px solid transparent;
+  margin-left: 140px;
+  text-decoration: none;
+  background-color: white;
+}
+
+input:focus{
+  border: 2px solid transparent;
+}
+
+em {
+  margin-top: 20px;
+  padding: -10px;
+}
+
+/* ----------------Content-------------------- */
+
+#grad1 {
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, green 20%, white 98%);
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  padding-bottom: 60px;
+}
+
+.column img[src^="img/iphone_double_2.png"] {
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.contain h1 {
+  margin: 200px 0px 0px 150px;
+  font-size: 100px;
+}
+
+.contain p {
+  margin: 20px 0px 0px 150px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.contain .linebreak {
+  background-color: #fff;
+  position: relative;
+  width: 10%;
+  height: 2px;
+  display: block;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+#grad1 .contain button {
+  border-radius: 100px;
+  background-color: transparent;
+  margin: 20px;
+  margin-left: 145px;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  padding: 15px 32px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+#grad1 .contain button:hover {
+  border-radius: 100px;
+  background-color: white;
+  margin: 20px;
+  margin-left: 145px;
+  display: inline-block;
+  color: black;
+  font-size: 20px;
+  padding: 15px 32px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+#grad2 {
+  width: 100%;
+  overflow: hidden;
+  background-image: linear-gradient(to bottom right, orange 20%, white 98%);
+}
+
+#grad2 .contain p {
+  margin: 20px 0px 0px 50px;
+  font-size: 20px;
+  font-weight: normal;
+  color: black;
+}
+
+#grad2 .contain h1 {
+  margin: 200px 0px 0px 50px;
+  font-size: 100px;
+  color: black;
+}
+
+#grad2 .contain .linebreak {
+  background-color: #000;
+  position: relative;
+  width: 10%;
+  height: 2px;
+  display: block;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.column img[src^="img/iphone_triple.png"] {
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+#grad2 .contain button {
+  border-radius: 100px;
+  background-color: transparent;
+  margin: 20px;
+  margin-left: 40px;
+  display: inline-block;
+  color: #000;
+  font-size: 20px;
+  padding: 15px 32px;
+  border: 2px solid #000;
+  transition: 0.3s;
+}
+
+#grad2 .contain button:hover {
+  border-radius: 100px;
+  background-color: white;
+  margin: 20px;
+  margin-left: 40px;
+  display: inline-block;
+  color: black;
+  font-size: 20px;
+  padding: 15px 32px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+#grad3 .contain h1 {
+  margin: 150px 0px 0px 150px;
+  font-size: 100px;
+  color: white;
+}
+
+#grad3 .contain button {
+  border-radius: 100px;
+  background-color: transparent;
+  margin: 20px;
+  margin-left: 145px;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+  padding: 15px 32px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+#grad3 .contain button:hover {
+  border-radius: 100px;
+  background-color: white;
+  margin: 20px;
+  margin-left: 145px;
+  display: inline-block;
+  color: black;
+  font-size: 20px;
+  padding: 15px 32px;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+
+#grad3 {
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, black 20%, white 20%, 98%);
+}
+
+.column img[src^="img/ipad_double.png"] {
+  margin-top: 180px;
+  margin-left: 30px;
+  width: 90%;
+}
+
+/* ----------------------footer-------------------- */
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+.footer img {
+  padding: 60px;
+  width: 220px;
+  height: auto;
+}
