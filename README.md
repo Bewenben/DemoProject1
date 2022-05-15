@@ -1,7 +1,7 @@
 ## Welcome to Demo Project Frontend 1
 
-Here is the link for the website:
+A demo project only for training.
 
-Link will be updated soon..
+[Link](https://bewenben.github.io/DemoProject1/)
 
 
